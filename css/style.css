@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Poppins&display=swap');
+body{
+   
+    font-family: 'Lato', sans-serif
+}
+.cover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background: #22bd7c;
+}
+.phone{
+    z-index: 1;
+    font-weight: 200;
+}
+.phone i{
+    color: rgb(0, 0, 0);
+}
+.phone a{
+    color: #000;
+    font-size: 17px;
+    font-weight: 529;
+    text-decoration: none;
+}
+.social-icon{
+    display: inline-block;
+    width: 10%;
+}
+.social-icon p{
+    display: block;
+    width: 100%;
+}
+.social-icon p a{
+    height: 30px;
+    margin-right: 10px;
+}
+.social-icon p a i{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.social-icon p a:hover{
+    background:  #22bd7c;
+    border-color: #22bd7c;
+}
+.social-icon p a:hover i{
+    color: white; 
+}
+
+/***********Navigation bar*********/
+.bg-color{
+    background: #0b3810;
+}
+.navbar-brand{
+    color: #22bd7c;
+    font-weight: bold;
+    font-size: 30px !important;
+}
+.navbar-brand:hover{
+    color: #22bd7c;    
+}
+.nav-link{
+    color: #22bd7c;
+    font-weight: 400;
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: #4fe0a4;
+}
+.btn-group{
+    color: #22bd7c;    
+}
+.navbar-toggler i{
+    color: #22bd7c;
+}
+
+/*-========Hero Section==========*/
+
+#hero{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/19.jpeg) top center;
+    background-size: cover;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+#hero .hero-logo{
+    margin: 20px;
+    max-width: 100%;
+}
+#hero .hero-container{
+    background: rgb(0, 0, 0, 0.4);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#hero h1{
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media (max-width: 768px){
+    #hero h1{
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+
+#hero h2{
+    color: #fff;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+@media (max-width: 768px){
+    #hero h2{
+        font-size: 20px;
+        line-height: 17px;
+        margin-bottom: 20px;
+    }
+}
+
+#hero .actions a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 8px 2px;
+    border-radius: 5px;
+    transition:0.5s;
+    margin: 10px;
+}
+
+#hero .btn-get-started{
+    background: #1b8659;
+    border: 1px solid #297c59;
+    color: #fff;
+}
+
+#hero .btn-get-started:hover{
+    background: none;
+    border: 2px solid #297c59;
+    text-decoration: none;
+}
+
+/*=========Category section ====*/
+
+.variety{
+    padding-bottom: 40px;
+}
+
+.variety .card{
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+}
+
+.variety .card-img{
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+}
+
+.variety .card-img img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.variety .card-body{
+    z-index: 15;
+    background: #22bd7c;
+    border-top: 4px solid #18724d91;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(45, 102, 62);
+    margin-top: -60px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+.variety .card-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
+.variety .card-title a{
+    color: #000;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.variety .card-text{
+    color: #000;
+}
+
+.variety .read-more a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.variety .card:hover img{
+    transform: scale(1.1)
+}
+
+.variety .card:hover .card-body{
+    border-color: #22bd7c;
+}
+.variety .card:hover .card-body .card-title a{
+    color: #0b3810;
+}
+
+
+/*====Product Section===*/
+.bg-img{
+    background: rgb(11, 19, 13);
+}
+.text-color{
+    color: #22bd7c;
+    text-decoration: underline;
+}
+
+.product-section h2{
+    font-size: 40px;
+}
+
+.product{
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.product .img{
+    display: block;
+    border-radius: 6px;
+    height: 350px;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 0;
+    width: 100%;
+}
+
+.product .img:after{
+    z-index: -1;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000;
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+
+.product.text-center{
+    padding: 20px;
+    position: relative;
+}
+
+.product .text-center .category{
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.product .text-center .price{
+    color: #297c59;
+    font-size: 15px;
+}
+.product .text-center .product-button{
+    font-size: 18px;
+    background: #297c59;
+    border: 1px solid #22bd7c;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.product .text-center .product-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.product .text-center .product-button:hover{
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #22bd7c;
+}
+
+.product-section .btn-prod{
+    font-size: 18px;
+    background: #297c59;
+    border: 1px solid #22bd7c;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.product-section .btn-prod:hover{
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #22bd7c;
+}
+
+/*===Subscribe section===*/
+
+#subscribe{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/hero1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon( 0 15%, 100% 0, 100% 85%, 0 100%);
+}
+
+#subscribe h4{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#subscribe .form-control{
+    color: #fff;
+    background: transparent;
+    font-size: 25px;
+    border: 2px solid #22bd7c;
+    width: 380px;
+    height: 40px;
+    border-radius: 0;
+}
+#subscribe form::placeholder{
+    font-size: 40px;
+    color: #fff;
+}
+
+#subscribe .form-btn{
+    background: #297c59;
+    border: 1px solid #22bd7c;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #fff;    
+    transition: 0.6s;
+}
+
+#subscribe .form-btn:hover{
+    background: transparent;
+    border: 1px solid #22bd7c;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: -15px;
+    height: 69px;
+}
+.footer-section .text-center p{
+    padding-top: 15px;
+}
+
+/*-=======Blog Section====*/
+
+.blog-start{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 10px;
+}
+@media (min-width: 768px){
+    .blog-start{
+        margin-bottom: 30px;
+    }
+}
+.blog-start .img, .blog-start .text{
+    width: 50%;
+}
+
+@media (max-width: 992px){
+    .blog-start .img, .blog-start .text{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .blog-start .img{
+        height: 400px;
+    }
+}
+
+.blog-start .text{
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.blog-start .text .heading{
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: light;
+    font-style: italic;
+}
+
+.blog-start .text .heading a{
+    color: #0f5317;
+    text-decoration: none;
+}
+
+.blog-start .text .heading a:hover,
+.blog-start .text .heading a:active,
+.blog-start .text .heading a:focus{
+    color: #22bd7c;
+}
+
+.blog-start .des p i{
+    padding-right: 10px;
+}
+
+.blog-start .btn-custom{
+    color: #1b8659;
+    font-style: italic;
+    text-decoration: none;
+}
+.blog-start .btn-custom:hover{
+    color: #0f221a;
+}
+.blog-start .btn-custom i{
+    color: #1b8659;
+}
